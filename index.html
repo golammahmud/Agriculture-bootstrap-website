@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/searchbox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- create Offcanvas navbar -->
+    <nav class="navbar navbar-expand-xxl">
+        <div class="container-fluid px-md-4  d-inline-flex">
+            <div class="justify-content-center align-items-center pl-md-4">
+                <a class="navbar-brand text-center text-md-start pl-4 " href="#"> <img src="images/logo.png"
+                        class=" img-responsive " alt="" sizes="" srcset=""> </a>
+            </div>
+            <!-- search box -->
+            <div class="d-flex justify-content-end text-end ml-auto justify-content-between position-relative me-1 me-md-0 ms-auto ms-md-0 ">
+                <form action="" class="search-bar float-left d-flex justify-content-md-end   ">
+                    <input type="search" name="search" pattern=".*\S.*" required>
+                    <button class="search-btn" type="submit">
+                      <span>Search</span>
+                    </button>
+                </form>
+                <!-- <form
+                    class="rounded-5 px-md-0 form-inline search-box d-flex  my-md-0 border-5 me-auto ms-auto     align-items-center  ">
+                    <input class="form-control mr-sm-2  fs-6 px-5 fw-bold rounded-pill border-none" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn  my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+                </form> -->
+                <button class="navbar-toggler float-end h1 mr-md-5" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header justify-content-between ">
+                    <h1 class="offcanvas-title text-center text-capitalize" id="offcanvasWithBothOptionsLabel"> oko - portalen </h1>
+                    <button type="button" class="btn-close h2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body text-dark text-center justify-content-center">
+                    <!-- navbar -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link  " href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end of Offcanvas navbar -->
+    <section class="" id="banner">
+        <div class="card bg-body text-white">
+            <div class="row">
+                <div class="col-md-6 justify-content-center">
+                    <div class="card-img-overlay   text-wrap   justify-content-center align-items-center mt-5  pr-5">
+                        <h1 class="card-title ml-5  text-start  text-capitalize mt-md-5">jord og planter</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/tructor.jpeg" class="card-img img-fluid img-responsive rounded-0" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <img src="images/firms.png" alt="" class="img-responsive img-fluid w-100 p-3" srcset="">
+    </div>
+    <section class="p-5" id="indroduction">
+        <div class="container-md-fluid p-md-4 ">
+            <div class="row justify-content-centerc me-auto ms-auto">
+                <div class="col-md-6 me-auto ms-auto ">
+                    <h1 class="text-center text-md-start text-capitalize ">introduction this firm</h1>
+                    <p class="text-center text-md-start my-md-4 my-4 lead">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Itaque facilis laborum hic molestias consequuntur accusamus repellendus provident vero
+                        iusto doloremque eaque eius quis autem deleniti exercitationem tempora, doloribus nostrum
+                        enim quisquam veritatis voluptatibus voluptatum assumenda amet omnis? Dolore, recusandae
+                        nobis.
+                    </p>
+                    <br>
+                    <!-- read more link -->
+                    <div class="mb-4">
+                        <a href="#" class="btn fs-5 lead btn-block text-md-start text-center">read more..</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/flowers.jpeg" alt="" class="img-fluid img-responsive w-md-100 d-none d-md-inline">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="crops">
+        <div class="container">
+            <h1 class="text-center text-md-start my-5">okologisk drink</h1>
+            <div class="row g-md-5 g-5 align-items-center justify-content-center ">
+                <div class=" mx-auto col-md-6 col-lg-4 me-auto ms-auto ">
+                    <div class="card rounded-3" style="width: auto;">
+                        <img src="images/ag1.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h5 class="card-title my-4 text-start text-capitalize">aurganic firimg </h5>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6 col-lg-4">
+                    <div class="card rounded-3" style="width: auto;">
+                        <img src="images/ag1.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <img src="images/ag2.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <img src="images/ag3.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <img src="images/ag5.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <img src="images/ag6.webp" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <img src="images/ag9.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <img src="images/ag10.jpeg" class="card-img-top img-fluid" alt="...">
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="message">
+        <div class="card bg-dark text-white justify-content-end align-items-center">
+            <img src="images/leaf.webp" class="card-img img-fluid " alt="...">
+            <div class="d-end">
+                <div class="card-img-overlay   justify-content-end align-items-center my-5 p-5  text-wrap  text-white ">
+                    <div class="row text-center align-items-center justify-content-center">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="card-title text-white my-4 my-md-5 text-md-start text-center">Afgroder</h2>
+                            <p class="card-text text-wrap lead lh-lg text-md-start  text-center">This is a wider card
+                                with supporting text below
+                                as a
+                                natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="article">
+        <div class="container">
+            <h1 class="text-center text-md-start my-5 text-capitalize">artikler om afgroder</h1>
+            <div class="row g-md-5 g-2 align-items-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img">
+                            <img src="images/ag1.jpeg" class="card-img-top img-fluid" alt="...">
+                        </div>
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"> <img src="images/ag1.jpeg" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"> <img src="images/ag2.jpeg" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"> <img src="images/ag3.jpeg" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"> <img src="images/ag5.jpeg" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"><img src="images/ag6.webp" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"> <img src="images/ag9.jpeg" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card rounded-1" style="width: auto;">
+                        <div class="article-card-img"><img src="images/ag10.jpeg" class="card-img-top img-fluid"
+                                alt="..."></div>
+
+                        <h3 class="card-title my-4 text-start text-capitalize">aurganic firimg </h3>
+                        <div class="card-body left-0 ml-0 p-0  ">
+                            <p class="card-text  text-start text-truncate text-wrap">Some quick example text to build on
+                                the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5" id="indroduction2">
+        <div class="container-md-fluid p-md-4 ">
+            <div class="row justify-content-center align-items-center me-auto ms-auto ">
+                <div class="col-md-6 ">
+                    <img src="images/ag12.webp" alt="" class="img-fluid img-responsive w-md-100 d-none d-md-inline">
+                </div>
+                <div class="col-md-6 me-auto ms-auto justify-content-center py-5 px-5 align-items-center   ">
+                    <h1 class="text-center text-md-start text-capitalize">introduction this firm</h1>
+                    <p class="text-center text-md-start my-md-4 my-4  lead">Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Itaque facilis laborum hic molestias consequuntur accusamus repellendus provident vero
+                        iusto doloremque eaque eius quis autem deleniti exercitationem tempora, doloribus nostrum
+
+                    </p>
+
+                    <!-- read more link -->
+                    <div class="mb-4">
+                        <a href="#" class="btn fs-5 lead btn-block text-md-start text-center align-items-center">read
+                            more..</a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <footer class="footer p-5">
+        <div class="container text-white">
+            <div class="row align-items-center justify-content-start">
+                <div class="col-md-6 my-5">
+                    <img src="images/footerlogo.png" class="img-fluid img-responsive " alt="" srcset="">
+                    <h4 class=" my-2 text-md-start text-center">- viden om okologi til landbrugsuddannelseb</h4>
+                    <p class="text-md-start text-start my-4  text-capitalize text-wrap lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facilis laborum hic molestias
+                        consequuntur accusamus repellendus provident vero iusto doloremque eaque eius quis autem
+                        deleniti exercitationem tempora, doloribus nostrum
+                    </p>
+                    <h2 class="text-md-start text-center text-capitalize text-dark-50">foden for <span
+                            class="text-dark">okologisk landbrug</span> </h2>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5   my-5 ">
+                    <div class="px-5 fw-normal fs-5  ">
+                        <p class="text-md-start  text-capitalize">om site </p>
+                        <p class="text-md-start  text-capitalize">om landbrugsskoleuddannelsen </p>
+                        <p class="text-md-start  text-capitalize">konta </p>
+                        <p class="text-md-start  text-capitalize">l&f's cookie politik </p>
+                        <p class="text-md-start  text-capitalize">l&f's privatlivspolitik </p>
+                    </div>
+                    <img src="images/footerlogo2.png" class="img-responsive img-fluid" alt="" srcset="">
+
+                </div>
+            </div>
+            <div class="div text-dark fw-bold my-5 my-md-3">
+                <p class="text-start text-uppercase text-dark">@oko-portalen <span
+                        class="text-capitalize text-dark">inc.2022. vi arbejder me okologi.</span></p>
+            </div>
+            <a href="#" class=" position-fixed float-end bottom-0 end-0 p-5"><i
+                    class="bi bi-arrow-up-circle h1 "></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
